@@ -1,0 +1,566 @@
+/* ==========================
+   Google Font
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8fbff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   Navbar
+========================== */
+
+header{
+    width:100%;
+    background:#ffffff;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#0d6efd;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#0d6efd;
+}
+
+/* ==========================
+   Hero Section
+========================== */
+
+.hero{
+    width:90%;
+    margin:60px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:55px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#0d6efd;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#084298;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:450px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ==========================
+   About Section
+========================== */
+
+.about{
+    width:90%;
+    margin:80px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.about-content{
+    max-width:550px;
+}
+
+.about-content h2{
+    font-size:42px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    font-size:18px;
+    color:#555;
+    margin-bottom:30px;
+    line-height:1.8;
+}
+
+.about-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.about-box div{
+    background:#ffffff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    text-align:center;
+    flex:1;
+    min-width:140px;
+}
+
+.about-box h3{
+    color:#0d6efd;
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.about-box p{
+    margin:0;
+    font-size:15px;
+}
+
+/* ==========================
+   Services Section
+========================== */
+
+.services{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.services h2{
+    font-size:42px;
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.services p{
+    color:#666;
+    margin-bottom:40px;
+}
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.service-card{
+    background:#ffffff;
+    width:330px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.10);
+    transition:0.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.service-card h3{
+    color:#0d6efd;
+    margin:20px 0 10px;
+    font-size:24px;
+}
+
+.service-card p{
+    padding:0 20px 25px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* ==========================
+   Reviews Section
+========================== */
+
+.reviews{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.reviews h2{
+    font-size:42px;
+    color:#0d6efd;
+    margin-bottom:40px;
+}
+
+.review-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.review-card{
+    width:320px;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.10);
+    transition:0.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-10px);
+}
+
+.review-card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.review-card h3{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.review-card p{
+    color:#555;
+    line-height:1.6;
+}
+
+.review-card span{
+    color:#FFD700;
+    font-size:22px;
+}
+
+/* ==========================
+   Gallery Section
+========================== */
+
+.gallery{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:42px;
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.gallery p{
+    color:#666;
+    margin-bottom:40px;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery-container img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.gallery-container img:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   Contact Section
+========================== */
+
+.contact{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+    background:#ffffff;
+    padding:60px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.10);
+}
+
+.contact h2{
+    font-size:42px;
+    color:#0d6efd;
+    margin-bottom:25px;
+}
+
+.contact p{
+    font-size:18px;
+    color:#555;
+    margin:15px 0;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:80px;
+}
+
+footer h3{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+    font-size:16px;
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:15px 0;
+}
+
+.hero,
+.about{
+    flex-direction:column;
+}
+
+.hero-content h1{
+    font-size:38px;
+}
+
+.about-content h2,
+.services h2,
+.reviews h2,
+.gallery h2,
+.contact h2{
+    font-size:32px;
+}
+
+.gallery-container{
+    grid-template-columns:1fr;
+}
+
+.service-card,
+.review-card{
+    width:100%;
+}
+
+.about-box{
+    flex-direction:column;
+}
+
+}
+
+/* Floating WhatsApp */
+
+.floating-whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:60px;
+
+height:60px;
+
+background:#25D366;
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.floating-whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+
+/* Floating Call */
+
+.floating-call{
+
+position:fixed;
+
+bottom:100px;
+
+right:25px;
+
+width:60px;
+
+height:60px;
+
+background:#0d6efd;
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.floating-call:hover{
+
+transform:scale(1.1);
+
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.appointment form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.appointment input,
+.appointment textarea{
+    padding:15px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    font-size:16px;
+}
+
+.appointment button{
+    padding:15px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
